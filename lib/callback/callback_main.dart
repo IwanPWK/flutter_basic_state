@@ -12,9 +12,9 @@ class CallbackMain extends StatefulWidget {
 class _CallbackMainState extends State<CallbackMain> {
   int counter = 0;
 
-  usingCallback(newData) {
+  usingCallback() {
     setState(() {
-      counter = newData + 1;
+      counter++;
       print('Tes COunter $counter');
     });
   }
@@ -43,7 +43,7 @@ class _CallbackMainState extends State<CallbackMain> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          UsingCallback.incrementCounter(counter);
+          UsingCallback.incrementCounter();
           print('Counter $counter');
         },
         tooltip: 'Increment',
