@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../global.dart';
 import 'passing_set_state.dart';
 
 class SetState extends StatefulWidget {
@@ -26,7 +27,9 @@ class _SetStateState extends State<SetState> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '${PassingSetState.counter}',
+              // Option #1
+              // '${PassingSetState.counter}',
+              '$counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
